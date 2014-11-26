@@ -104,24 +104,3 @@ function addEvent(ev, els, func) {
 function isArray(input) {
 	return Object.prototype.toString.call(input) === ('[object Array]');
 };
-
-//////////////////TEMPORARY stuff
-
-// document.querySelector('search').addEventListener('click', doShit);
-
-// function doShit() {
-// 	var items = [];
-// 	for (var i=0, l=data.results.length; i < l; ++i) {
-// 		var item = {};
-// 		item.img = data.results[i].MainImage.url_75x75;
-// 		item.title = data.results[i].title;
-// 		item.description = data.results[i].description;
-// 		item.price = data.results[i].price;
-// 		item.url = data.results[i].url;
-// 		items.push(item);
-// 		stuffContents.innerHTML += '<div class="item" id="item-'+i+'"><img src="'+item.img+'"><div class="item-text"><p>'+item.title+'</p><p class="price">Price: $'+item.price+'</p><p class="more"><a class="opts" href="'+item.url+'" target="_blank">More Info</a> | <span class="opts" id="remove-'+i+
-// 		'">Remove</span></p></div></div>';
-// 	};
-// 	$('#stuff').fadeIn();
-// 	setUpRemoveButton();
-// }
