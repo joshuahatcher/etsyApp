@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+	<div class="container">
+		<h1>Etsy Catalog Search App</h1>
+		<form class="controls">
+			<label for="keywords">Search Terms: </label>
+			<input type="text" class="keywords"></input>
+			<label for="limit">Limit: </label>
+			<input type="number" class="limit" value="25" min="1"></input>
+			<input type="button" class="search" value="Search"></input>
+		</form>
+		<br>
+		<div class="stuff" style="display:none;">
+		</div>
+	</div>
+
+	<script class="itemTemplate" type="text/x-handlebars-template">
+		{{title}}
+	</script>
+
+	<script src="js/jquery-2.0.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/data.js"></script>
+</body>
+</html>

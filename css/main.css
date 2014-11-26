@@ -1,0 +1,65 @@
+h1, h2, p, label, input {
+  font-family: Open Sans, Helvetica, sans-serif; }
+
+h1 {
+  background-color: #ff5233;
+  background-image: linear-gradient(bottom, #ff7256 27%, #ff5233 64%);
+  background-image: -o-linear-gradient(bottom, #ff7256 27%, #ff5233 64%);
+  background-image: -moz-linear-gradient(bottom, #ff7256 27%, #ff5233 64%);
+  background-image: -webkit-linear-gradient(bottom, #ff7256 27%, #ff5233 64%);
+  background-image: -ms-linear-gradient(bottom, #ff7256 27%, #ff5233 64%);
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 #333333;
+  padding: 5px 10px;
+  color: #FFF;
+  text-align: center; }
+
+p {
+  margin: 0; }
+
+.container {
+  width: 520px;
+  margin: 0 auto;
+  padding: 0 35px;
+  border: 1px dashed #333333; }
+
+.controls {
+  background-color: #ddddd8;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.25, #cbcbc5), color-stop(0.76, #ddddd8), color-stop(0.98, #eeeeec), color-stop(1, #e7e7e4));
+  background-image: -webkit-linear-gradient(center bottom, #cbcbc5 25%, #ddddd8 76%, #eeeeec 98%, #e7e7e4 100%);
+  background-image: -moz-linear-gradient(center bottom, #cbcbc5 25%, #ddddd8 76%, #eeeeec 98%, #e7e7e4 100%);
+  background-image: -ms-linear-gradient(center bottom, #cbcbc5 25%, #ddddd8 76%, #eeeeec 98%, #e7e7e4 100%);
+  background-image: -o-linear-gradient(center bottom, #cbcbc5 25%, #ddddd8 76%, #eeeeec 98%, #e7e7e4 100%);
+  background-image: linear-gradient(center bottom, #cbcbc5 25%, #ddddd8 76%, #eeeeec 98%, #e7e7e4 100%);
+  border: 1px solid #aaaaaa;
+  border-radius: 3px;
+  box-shadow: 0 0 10px 0 #333333;
+  padding: 5px 10px; }
+
+.item {
+  clear: both;
+  overflow: hidden;
+  min-height: 85px;
+  margin: 10px 0 0;
+  padding: 10px 0 0;
+  border-top: 1px dashed #333333;
+  -webkit-transition: all 1s ease-in-out; }
+  .item:hover {
+    background: #eeeeee; }
+  .item .item-text, .item img {
+    float: left; }
+  .item .item-text {
+    width: 425px;
+    padding: 0 0 0 20px; }
+    .item .item-text p.price {
+      font-size: 12px; }
+    .item .item-text p.more {
+      font-size: 12px;
+      color: #ff5233; }
+      .item .item-text p.more .opts {
+        color: #ff5233;
+        text-decoration: none;
+        cursor: pointer; }
+        .item .item-text p.more .opts:hover {
+          text-decoration: underline; }

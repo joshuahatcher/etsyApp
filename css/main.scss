@@ -1,0 +1,78 @@
+@mixin gray-gradient {
+	background-color: #ddddd8;
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.25,#cbcbc5),color-stop(0.76,#ddddd8),color-stop(0.98,#eeeeec),color-stop(1,#e7e7e4));
+	background-image: -webkit-linear-gradient(center bottom,#cbcbc5 25%,#ddddd8 76%,#eeeeec 98%,#e7e7e4 100%);
+	background-image: -moz-linear-gradient(center bottom,#cbcbc5 25%,#ddddd8 76%,#eeeeec 98%,#e7e7e4 100%);
+	background-image: -ms-linear-gradient(center bottom,#cbcbc5 25%,#ddddd8 76%,#eeeeec 98%,#e7e7e4 100%);
+	background-image: -o-linear-gradient(center bottom,#cbcbc5 25%,#ddddd8 76%,#eeeeec 98%,#e7e7e4 100%);
+	background-image: linear-gradient(center bottom,#cbcbc5 25%,#ddddd8 76%,#eeeeec 98%,#e7e7e4 100%);
+}
+@mixin orange-gradient {
+	background-color: #ff5233;
+	background-image: linear-gradient(bottom, rgb(255,114,86) 27%, rgb(255,82,51) 64%);
+	background-image: -o-linear-gradient(bottom, rgb(255,114,86) 27%, rgb(255,82,51) 64%);
+	background-image: -moz-linear-gradient(bottom, rgb(255,114,86) 27%, rgb(255,82,51) 64%);
+	background-image: -webkit-linear-gradient(bottom, rgb(255,114,86) 27%, rgb(255,82,51) 64%);
+	background-image: -ms-linear-gradient(bottom, rgb(255,114,86) 27%, rgb(255,82,51) 64%);
+}
+@mixin box-specs ($border, $rad, $shadow) {
+	border: 1px solid $border;
+	border-radius: $rad;
+	box-shadow: 0 0 10px 0 $shadow;
+}
+
+h1, h2, p, label, input {font-family: Open Sans, Helvetica, sans-serif;}
+
+h1 {
+	@include orange-gradient;
+	@include box-specs(#EEE, 5px, #333);
+	padding: 5px 10px;
+	color: #FFF;
+	text-align: center;
+}
+p {margin: 0;}
+
+.container {
+	width: 520px;
+	margin: 0 auto;
+	padding: 0 35px;
+	border: 1px dashed #333;
+}
+.controls {
+	@include gray-gradient;
+	@include box-specs(#AAA, 3px, #333);
+	padding: 5px 10px;
+}
+.item {
+	clear: both;
+	overflow: hidden;
+	min-height: 85px;
+	margin: 10px 0 0;
+	padding: 10px 0 0;
+	border-top: 1px dashed #333;
+	-webkit-transition: all 1s ease-in-out;
+
+	&:hover {
+		background: #eeeeee;
+	}
+
+	.item-text, img {float: left;}
+
+	.item-text {
+		width: 425px;
+		padding: 0 0 0 20px;
+	
+		p.price {font-size: 12px;}
+		p.more {
+			font-size: 12px;
+			color: #ff5233;
+	
+			.opts {
+				color: #ff5233;
+				text-decoration: none;
+				cursor: pointer;
+				&:hover {text-decoration: underline;}
+			}
+		}
+	}
+}
